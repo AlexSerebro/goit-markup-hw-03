@@ -51,6 +51,9 @@ ul {
 
 .list {
   list-style: none;
+  padding-inline-start: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .link:hover,
@@ -63,45 +66,72 @@ ul {
   text-decoration: none;
 }
 .container {
+  margin-left: auto;
+  margin-right: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
-  border: 1px dashed red;
+  border: 1px dashed #212121;
 }
 /* header */
 
 .header {
-  padding-top: 32px;
-  padding-bottom: 32px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 /* site nav */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .item:not(:last-child),
+.list .item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-align: left;
 }
 .active-page {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--accent-color);
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-align: left;
 }
 
 .logo {
+  margin-right: 90px;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   color: var(--accent-color);
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: left;
 }
@@ -114,13 +144,20 @@ ul {
 }
 
 .contact-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-align: left;
+}
+
+.contact-list {
+  margin-left: auto;
 }
 
 .section {
@@ -136,6 +173,8 @@ ul {
   padding-bottom: 200px;
 }
 .hero-title {
+  margin-bottom: 30px;
+
   text-transform: uppercase;
   color: var(--white-text-color);
   font-size: 44px;
@@ -144,13 +183,10 @@ ul {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
-
-  margin-bottom: 30px;
 }
 .hero-button {
   cursor: pointer;
   background-color: var(--accent-color);
-
   border: 0;
   border-radius: 4px;
   padding: 10px 32px;
@@ -201,6 +237,10 @@ ul {
 .features-section {
 }
 
+.list .features-list:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features {
   display: none;
 }
@@ -223,6 +263,9 @@ ul {
   padding-top: 0;
   padding-bottom: 94px;
 }
+.list .task-list:not(:last-child) {
+  margin-right: 30px;
+}
 
 .task-title {
   margin-bottom: 50px;
@@ -231,6 +274,10 @@ ul {
 /* section team */
 .section-team {
   background-color: var(--sect-team-bg-color);
+}
+
+.list .team-list:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-title {
@@ -265,6 +312,11 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
 .logo-footer {
   color: var(--white-text-color);
 }
@@ -280,6 +332,11 @@ ul {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-align: left;
+}
+.footer-list {
+  margin-right: auto;
+  flex-direction: column;
   text-align: left;
 }
 
