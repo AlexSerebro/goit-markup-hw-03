@@ -247,6 +247,10 @@ ul {
   margin-right: 30px;
 }
 
+.task-img {
+  display: block;
+}
+
 .task-title {
   margin-bottom: 50px;
 }
@@ -273,6 +277,7 @@ ul {
 
 .team-img {
   margin-bottom: 30px;
+  display: block;
 }
 
 .name {
@@ -394,6 +399,7 @@ ul {
 }
 
 .portf-img {
+  display: block;
   margin-bottom: 20px;
 }
 
